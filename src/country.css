@@ -22,7 +22,10 @@
 {
     background-color:skyblue;
 }
-
+.btn
+{
+    margin-left: 10px;
+}
 
 .country p,image,button{
     margin:4px 0px;

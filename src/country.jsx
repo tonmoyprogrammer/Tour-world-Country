@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './country.css'
-export default function Country({country,allVisitedCountries})
+export default function Country({country,allVisitedCountries,showVisitedFlags})
 {
     const {name,area,population,flags} = country;
     const [visited,setVisited] = useState(false);
@@ -36,6 +36,11 @@ export default function Country({country,allVisitedCountries})
                     visited?"visited" : "Not visited"
                 }
             </button>
+            <button className='btn' onClick={()=>
+                {
+                    showVisitedFlags(flags.flags.png);
+                }
+            }>Add visited flag</button>
 
         </div>
     )
