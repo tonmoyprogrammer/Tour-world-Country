@@ -1,5 +1,6 @@
-
+import Countries from './countries'
 import './App.css'
+import { Suspense } from 'react'
 
 const fetchObject = async()=>
   {
@@ -11,10 +12,14 @@ const fetchObject = async()=>
 function App() {
 
   const getFetchObject = fetchObject();
-  console.log(getFetchObject)
+  
   return (
     <>
-     
+     <Suspense fallback={<p>Data loading...............</p>}>
+    <Countries countries={getFetchObject}>
+
+    </Countries>
+     </Suspense>
      
     </>
   )
