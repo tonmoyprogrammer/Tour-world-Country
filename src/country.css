@@ -23,6 +23,7 @@
     background-color:skyblue;
 }
 
+
 .country p,image,button{
     margin:4px 0px;
 }
@@ -54,3 +55,8 @@
     padding-bottom: 5px;
 
 }
+.country-visited
+{
+    background-color:rgba(120.11,120,151,0.4);
+}
+

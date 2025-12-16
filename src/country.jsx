@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import './country.css'
-export default function Country({country})
+export default function Country({country,allVisitedCountries})
 {
     const {name,area,population,flags} = country;
     const [visited,setVisited] = useState(false);
+   
     const handleVisited = ()=>
     {
         if(visited)
@@ -12,10 +13,14 @@ export default function Country({country})
         }
         else{
             setVisited(true)
+            allVisitedCountries(country);
+         
         }
+           
+        
     }
     return(
-        <div className="country">
+        <div className={`country ${visited?"country-visited":""}`}>
             <img src={flags.flags.png} alt={flags.flags.alt}/>
             <p className='country-name'>Name : {name.common}</p>
             <p className='area'>Area : {area.area}</p>
@@ -28,7 +33,7 @@ export default function Country({country})
             </p>
             <button onClick={handleVisited}>
                 {
-                    visited?"Visited" : "Not visited"
+                    visited?"visited" : "Not visited"
                 }
             </button>
 
