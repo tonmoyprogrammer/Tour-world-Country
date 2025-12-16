@@ -10,3 +10,47 @@
     border-radius: 25px;
     margin:0px auto;
 }
+.country button{
+    padding:10px 30px;
+    text-align: center;
+    border:1px solid white;
+    background-color: black;
+    border-radius: 25px;
+    margin-top: 15px;
+}
+.country button:hover
+{
+    background-color:skyblue;
+}
+
+.country p,image,button{
+    margin:4px 0px;
+}
+.big-small
+{
+    color:rgb(255, 255, 255);
+}
+
+
+.area
+{
+    padding-top: 7px;
+    color:grey;
+}
+.population
+{
+    padding: 7px 0px;
+    color:grey;
+}
+
+.country-name{
+    margin:5px 0px;
+    border-bottom: 1px solid beige;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color:violet;
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: 5px;
+
+}

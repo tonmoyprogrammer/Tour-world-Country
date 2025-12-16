@@ -16,9 +16,7 @@ function App() {
   return (
     <>
      <Suspense fallback={<p>Data loading...............</p>}>
-    <Countries countries={getFetchObject}>
-
-    </Countries>
+    <Countries countries={getFetchObject}> </Countries>
      </Suspense>
      
     </>
